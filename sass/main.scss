@@ -60,19 +60,19 @@ body {
   }
 
   &-2 {
-    top: 42vmin;
-    left: 15.8vmin;
     width: 10vmin;
     height: 10vmin;
     background: $portrait-color;
+    top: 42vmin;
+    left: 15.8vmin;
     transform: rotate(-28deg);
 
     &::before {
-      top: -10vmin;
-      left: -15.7vmin;
       width: 10vmin;
       height: 13vmin;
       background: $portrait-color;
+      top: -10vmin;
+      left: -15.7vmin;
       transform: rotate(-25deg);
       border-radius: 55% 75% 0% 100% / 100% 99% 1% 18%;
     }
