@@ -42,7 +42,7 @@ body {
       top: -3vmin;
       left: -3vmin;
       transform: rotate(0deg);
-      border-radius: 55% 75% 0% 100% / 100% 99% 1% 18%;
+      border-radius: 55% 75% 0 100% / 100% 99% 1% 18%;
     }
 
     &::after {
@@ -52,7 +52,7 @@ body {
       top: -2.3vmin;
       left: -11vmin;
       transform: rotate(1deg);
-      border-radius: 58% 52% 100% 0% / 91% 100% 0% 9%;
+      border-radius: 58% 52% 100% 0 / 91% 100% 0 9%;
     }
   }
 
@@ -71,7 +71,7 @@ body {
       top: -10vmin;
       left: -15.7vmin;
       transform: rotate(-25deg);
-      border-radius: 55% 75% 0% 100% / 100% 99% 1% 18%;
+      border-radius: 55% 75% 0 100% / 100% 99% 1% 18%;
     }
 
     &::after {
@@ -441,7 +441,7 @@ body {
       background: $bg-color;
       top: 3.5vmin;
       left: -0.6vmin;
-      border-radius: 60% 55% 100% 0% / 100% 100% 0% 9%;
+      border-radius: 60% 55% 100% 0 / 100% 100% 0 9%;
     }
 
     &::after {
@@ -479,7 +479,7 @@ body {
       background: $portrait-color;
       top: 9.2vmin;
       left: 2vmin;
-      border-radius: 81% 19% 43% 57% / 0% 41% 59% 100%;
+      border-radius: 81% 19% 43% 57% / 0 41% 59% 100%;
       transform: rotate(-25deg);
     }
   }
