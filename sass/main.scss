@@ -2,52 +2,31 @@
 $bg-color: #f8f8f8;
 $shape-color: #000000;
 
-// mixins
-@mixin center {
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: $bg-color;
+  overflow: hidden;
+
+  * {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     margin: auto;
-}
+    box-sizing: border-box;
 
-@mixin pseudo($position: absolute, $content: "") {
-    content: $content;
-    position: $position;
-}
-
-@mixin square($width,$height,$background) {
-  width: $width;
-  height: $height;
-  background: $background;
-}
-
-@mixin breakpoint($point) {
-    @if $point==tablet {
-        @media (max-width: 1024px) and (min-width: 768px) {
-            @content ;
-        }
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
     }
-    @else if $point==mobile {
-        @media (max-width: 480px) and (min-width: 320px) {
-            @content ;
-        }
-    }
+  }
 }
 
-html, body{
-  width: 100%;
-  height: 100%;
-}
-
-body{
-  background: $bg-color;
-  overflow: hidden;
-}
-
-.hair{
-  @include center;
+.hair {
   top: 0.5vmin;
   left: -4vmin;
   width: 26vmin;
@@ -58,8 +37,7 @@ body{
   border-bottom-right-radius: 17vmin;
   border-bottom-left-radius: 20.5vmin;
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: -3vmin;
     left: -3vmin;
     width: 42vmin;
@@ -67,10 +45,9 @@ body{
     background: $shape-color;
     transform: rotate(0deg);
     border-radius: 55% 75% 0% 100% / 100% 99% 1% 18%;
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: -2.3vmin;
     left: -11vmin;
     width: 36vmin;
@@ -81,17 +58,15 @@ body{
   }
 }
 
-.hair-2{
-  @include center;
+.hair-2 {
   top: 42vmin;
   left: 15.8vmin;
   width: 10vmin;
   height: 10vmin;
   background: $shape-color;
   transform: rotate(-28deg);
-  
-  &:before{
-    @include pseudo;
+
+  &:before {
     top: -10vmin;
     left: -15.7vmin;
     width: 10vmin;
@@ -99,10 +74,9 @@ body{
     background: $shape-color;
     transform: rotate(-25deg);
     border-radius: 55% 75% 0% 100% / 100% 99% 1% 18%;
-  }    
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: -5.2vmin;
     left: -17vmin;
     width: 0;
@@ -111,11 +85,10 @@ body{
     border-left: 1vmin solid transparent;
     border-right: 1vmin solid transparent;
     transform: rotate(195deg);
-  }  
+  }
 }
 
-.hair-3{
-  @include center;
+.hair-3 {
   top: -5vmin;
   left: -43vmin;
   width: 20vmin;
@@ -124,18 +97,16 @@ body{
   border-top-left-radius: 100%;
   transform: rotate(-16deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 27vmin;
     left: -0.4vmin;
     width: 12vmin;
     height: 14vmin;
     background: $shape-color;
     transform: rotate(5deg);
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 37vmin;
     left: -3vmin;
     width: 8.5vmin;
@@ -146,26 +117,23 @@ body{
   }
 }
 
-.hair-4{
-  @include center;
+.hair-4 {
   top: 44vmin;
   left: -44.8vmin;
   width: 8vmin;
   height: 14vmin;
   background: $shape-color;
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 11.6vmin;
     left: -1.5vmin;
     width: 5vmin;
     height: 5vmin;
     background: $shape-color;
     transform: rotate(-20deg) skewX(23deg);
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 13vmin;
     left: -7.5vmin;
     width: 8vmin;
@@ -175,8 +143,7 @@ body{
   }
 }
 
-.hair-5{
-  @include center;
+.hair-5 {
   top: 50.4vmin;
   left: 36.9vmin;
   width: 9.4vmin;
@@ -184,8 +151,7 @@ body{
   background: $shape-color;
   transform: rotate(-35deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: -0.1vmin;
     left: 10.4vmin;
     width: 8vmin;
@@ -194,10 +160,9 @@ body{
     transform: rotate(30deg);
     border-top-left-radius: 5vmin;
     border-bottom-left-radius: 5vmin;
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: -1vmin;
     left: 13.2vmin;
     width: 0;
@@ -209,8 +174,7 @@ body{
   }
 }
 
-.hair-6{
-  @include center;
+.hair-6 {
   top: 61vmin;
   left: 38vmin;
   width: 4.7vmin;
@@ -218,8 +182,7 @@ body{
   background: $shape-color;
   transform: rotate(-40deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: -4vmin;
     left: -0.7vmin;
     width: 6.5vmin;
@@ -230,8 +193,7 @@ body{
     transform: rotate(-39deg);
   }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: -38.5vmin;
     left: 22.5vmin;
     width: 8vmin;
@@ -243,8 +205,7 @@ body{
   }
 }
 
-.face{
-  @include center;
+.face {
   z-index: 2;
   top: -27vmin;
   left: -8vmin;
@@ -255,8 +216,7 @@ body{
   border-top-left-radius: 14.5vmin;
   border-top-right-radius: 4vmin;
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 17.8vmin;
     left: 6.3vmin;
     width: 15vmin;
@@ -265,10 +225,9 @@ body{
     transform: skewX(-22.5deg);
     border-top-right-radius: 8vmin;
     border-bottom-right-radius: 5vmin;
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 19vmin;
     left: -7.35vmin;
     width: 20vmin;
@@ -280,8 +239,7 @@ body{
   }
 }
 
-.face-2{
-  @include center;
+.face-2 {
   top: 0.55vmin;
   left: -25vmin;
   width: 12vmin;
@@ -292,8 +250,7 @@ body{
   border-bottom-right-radius: 100%;
   transform: rotate(-9deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     left: 1.2vmin;
     width: 10vmin;
     height: 15vmin;
@@ -302,8 +259,7 @@ body{
     border-bottom-left-radius: 45%;
   }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: -11vmin;
     left: 3.5vmin;
     width: 10vmin;
@@ -314,8 +270,7 @@ body{
   }
 }
 
-.face-3{
-  @include center;
+.face-3 {
   top: 26.5vmin;
   left: 6.5vmin;
   width: 10vmin;
@@ -325,8 +280,7 @@ body{
   border-bottom-left-radius: 5vmin;
   transform: rotate(7deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 4.6vmin;
     left: 2vmin;
     width: 11vmin;
@@ -334,10 +288,9 @@ body{
     background: $bg-color;
     border-top-right-radius: 10vmin;
     transform: rotate(34deg);
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 3.5vmin;
     left: 10.1vmin;
     width: 4vmin;
@@ -348,8 +301,7 @@ body{
   }
 }
 
-.face-4{
-  @include center;
+.face-4 {
   z-index: 2;
   top: 38.2vmin;
   left: 9.3vmin;
@@ -358,8 +310,7 @@ body{
   background: $bg-color;
   transform: rotate(6deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 3.6vmin;
     left: -11vmin;
     width: 12.5vmin;
@@ -370,11 +321,10 @@ body{
   }
 }
 
-.eye-right{
-  @include center;
+.eye-right {
+  z-index: 2;
   top: -10.4vmin;
   left: 11vmin;
-  z-index: 2;
   width: 13vmin;
   height: 5.2vmin;
   background: $shape-color;
@@ -382,8 +332,7 @@ body{
   border-bottom-left-radius: 2.5vmin;
   transform: rotate(-7deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 2.7vmin;
     left: 1.1vmin;
     width: 10.2vmin;
@@ -391,10 +340,9 @@ body{
     background: $bg-color;
     border-radius: 5vmin;
     transform: rotate(30deg);
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 0.4vmin;
     left: 3.2vmin;
     width: 4vmin;
@@ -406,11 +354,10 @@ body{
   }
 }
 
-.eye-right-2{
-  @include center;
+.eye-right-2 {
+  z-index: 2;
   top: -4.9vmin;
   left: 5vmin;
-  z-index: 2;
   width: 4vmin;
   height: 4vmin;
   background: $bg-color;
@@ -418,8 +365,7 @@ body{
   border-bottom-right-radius: 100%;
   transform: rotate(-40deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: -0.1vmin;
     left: -1vmin;
     width: 3vmin;
@@ -429,19 +375,17 @@ body{
   }
 }
 
-.eye-left{
-  @include center;
+.eye-left {
+  z-index: 2;
   top: -12.5vmin;
   left: -21.5vmin;
-  z-index: 2;
   width: 11.5vmin;
   height: 2.4vmin;
   background: $shape-color;
   border-top-left-radius: 100%;
   transform: rotate(5deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 1vmin;
     left: 5.3vmin;
     width: 2.7vmin;
@@ -450,8 +394,7 @@ body{
     transform: rotate(-45deg);
   }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 0.4vmin;
     left: 9vmin;
     width: 2vmin;
@@ -462,11 +405,10 @@ body{
   }
 }
 
-.nose{
-  @include center;
+.nose {
+  z-index: 2;
   top: 15.6vmin;
   left: -5.95vmin;
-  z-index: 2;
   width: 6.5vmin;
   height: 2.1vmin;
   background: $shape-color;
@@ -475,18 +417,16 @@ body{
   border-bottom-left-radius: 0;
   transform: rotate(20deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: -0.65vmin;
     left: 1.1vmin;
     width: 6.5vmin;
     height: 0.7vmin;
     background: $shape-color;
     transform: rotate(-20deg);
-  }  
+  }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 0.2vmin;
     left: 1.8vmin;
     width: 4.1vmin;
@@ -496,19 +436,17 @@ body{
   }
 }
 
-.mustache{
-  @include center;
+.mustache {
+  z-index: 2;
   top: 29vmin;
   left: -3.5vmin;
-  z-index: 2;
   width: 16.9vmin;
   height: 6vmin;
   background: $shape-color;
   border-top-left-radius: 4vmin;
   border-top-right-radius: 5vmin;
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 3.5vmin;
     left: -0.6vmin;
     width: 18vmin;
@@ -517,8 +455,7 @@ body{
     border-radius: 60% 55% 100% 0% / 100% 100% 0% 9%;
   }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: -2.7vmin;
     left: 4vmin;
     width: 2vmin;
@@ -528,11 +465,10 @@ body{
   }
 }
 
-.mustache-2{
-  @include center;
+.mustache-2 {
+  z-index: 2;
   top: 23.3vmin;
   left: 4.3vmin;
-  z-index: 2;
   width: 10vmin;
   height: 3.8vmin;
   background: $shape-color;
@@ -540,8 +476,7 @@ body{
   border-top-right-radius: 100%;
   transform: rotate(25deg);
 
-  &:before{
-    @include pseudo;
+  &:before {
     top: 4vmin;
     left: -3.5vmin;
     width: 2vmin;
@@ -550,8 +485,7 @@ body{
     transform: rotate(35deg);
   }
 
-  &:after{
-    @include pseudo;
+  &:after {
     top: 9.2vmin;
     left: 2vmin;
     width: 5.4vmin;
