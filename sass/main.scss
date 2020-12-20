@@ -243,8 +243,8 @@ body {
     transform: rotate(-9deg);
 
     &::before {
-      height: 15vmin;
       width: 10vmin;
+      height: 15vmin;
       background: $bg-color;
       left: 1.2vmin;
       transform: rotate(20deg);
