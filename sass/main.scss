@@ -95,7 +95,7 @@ body {
     background: $portrait-color;
     top: -5vmin;
     left: -43vmin;
-    border-top-left-radius: 100%;
+    border-radius: 100% 0 0 0;
     transform: rotate(-16deg);
 
     &::before {
@@ -114,7 +114,7 @@ body {
       top: 37vmin;
       left: -3vmin;
       transform: rotate(37deg);
-      border-bottom-right-radius: 10vmin;
+      border-radius: 0 0 10vmin 0;
     }
   }
 
@@ -159,8 +159,7 @@ body {
       top: -0.1vmin;
       left: 10.4vmin;
       transform: rotate(30deg);
-      border-top-left-radius: 5vmin;
-      border-bottom-left-radius: 5vmin;
+      border-radius: 5vmin 0 0 5vmin;
     }
 
     &::after {
@@ -187,8 +186,7 @@ body {
       width: 6.5vmin;
       height: 9vmin;
       background: $portrait-color;
-      border-top-left-radius: 7vmin;
-      border-bottom-left-radius: 1.5vmin;
+      border-radius: 7vmin 0 0 1.5vmin;
       transform: rotate(-39deg);
       top: -4vmin;
       left: -0.7vmin;
@@ -201,8 +199,7 @@ body {
       top: -38.5vmin;
       left: 22.5vmin;
       transform: rotate(25deg);
-      border-top-right-radius: 80%;
-      border-bottom-right-radius: 60%;
+      border-radius: 0 80% 60% 0;
     }
   }
 }
@@ -216,8 +213,7 @@ body {
     top: -27vmin;
     left: -8vmin;
     transform: skewX(22.5deg);
-    border-top-left-radius: 14.5vmin;
-    border-top-right-radius: 4vmin;
+    border-radius: 14.5vmin 4vmin 0 0;
 
     &::before {
       width: 15vmin;
@@ -226,8 +222,7 @@ body {
       top: 17.8vmin;
       left: 6.3vmin;
       transform: skewX(-22.5deg);
-      border-top-right-radius: 8vmin;
-      border-bottom-right-radius: 5vmin;
+      border-radius: 0 8vmin 5vmin 0;
     }
 
     &::after {
@@ -237,8 +232,7 @@ body {
       top: 19vmin;
       left: -7.35vmin;
       transform: rotate(4deg) skewX(-22.5deg);
-      border-bottom-left-radius: 50%;
-      border-bottom-right-radius: 45%;
+      border-radius: 0 0 45% 50%;
     }
   }
 
@@ -248,18 +242,16 @@ body {
     background: $bg-color;
     top: 0.55vmin;
     left: -25vmin;
-    border-top-left-radius: 100%;
-    border-bottom-left-radius: 20%;
-    border-bottom-right-radius: 100%;
+    border-radius: 100% 0 100% 20%;
     transform: rotate(-9deg);
 
     &::before {
       height: 15vmin;
+      width: 10vmin;
       background: $bg-color;
       left: 1.2vmin;
-      width: 10vmin;
       transform: rotate(20deg);
-      border-bottom-left-radius: 45%;
+      border-radius: 0 0 0 45%;
     }
 
     &::after {
@@ -269,7 +261,7 @@ body {
       top: -11vmin;
       left: 3.5vmin;
       transform: rotate(5deg);
-      border-top-left-radius: 50%;
+      border-radius: 50% 0 0 0;
     }
   }
 
@@ -279,8 +271,7 @@ body {
     background: $bg-color;
     top: 26.5vmin;
     left: 6.5vmin;
-    border-bottom-right-radius: 10vmin;
-    border-bottom-left-radius: 5vmin;
+    border-radius: 0 0 10vmin 5vmin;
     transform: rotate(7deg);
 
     &::before {
@@ -289,7 +280,7 @@ body {
       background: $bg-color;
       top: 4.6vmin;
       left: 2vmin;
-      border-top-right-radius: 10vmin;
+      border-radius: 0 10vmin 0 0;
       transform: rotate(34deg);
     }
 
@@ -299,7 +290,7 @@ body {
       background: $portrait-color;
       top: 3.5vmin;
       left: 10.1vmin;
-      border-top-left-radius: 2.2vmin;
+      border-radius: 2.2vmin 0 0 0;
       transform: rotate(-10deg);
     }
   }
@@ -319,7 +310,7 @@ body {
       background: $bg-color;
       top: 3.6vmin;
       left: -11vmin;
-      border-bottom-left-radius: 2.5vmin;
+      border-radius: 0 0 0 2.5vmin;
       transform: rotate(-12deg);
     }
   }
@@ -333,8 +324,7 @@ body {
     background: $portrait-color;
     top: -10.4vmin;
     left: 11vmin;
-    border-top-left-radius: 2.5vmin;
-    border-bottom-left-radius: 2.5vmin;
+    border-radius: 2.5vmin 0 0 2.5vmin;
     transform: rotate(-7deg);
 
     &::before {
@@ -353,8 +343,7 @@ body {
       background: $portrait-color;
       top: 0.4vmin;
       left: 3.2vmin;
-      border-top-left-radius: 5vmin;
-      border-bottom-right-radius: 1vmin;
+      border-radius: 5vmin 0 1vmin 0;
       transform: rotate(40deg);
     }
   }
@@ -366,8 +355,7 @@ body {
     background: $bg-color;
     top: -4.9vmin;
     left: 5vmin;
-    border-top-right-radius: 100%;
-    border-bottom-right-radius: 100%;
+    border-radius: 0 100% 100% 0;
     transform: rotate(-40deg);
 
     &::before {
@@ -388,7 +376,7 @@ body {
   background: $portrait-color;
   top: -12.5vmin;
   left: -21.5vmin;
-  border-top-left-radius: 100%;
+  border-radius: 100% 0 0 0;
   transform: rotate(5deg);
 
   &::before {
@@ -406,7 +394,7 @@ body {
     background: $portrait-color;
     top: 0.4vmin;
     left: 9vmin;
-    border-bottom-right-radius: 1vmin;
+    border-radius: 0 0 1vmin 0;
     transform: rotate(-88deg) skewX(-20deg);
   }
 }
@@ -418,9 +406,7 @@ body {
   background: $portrait-color;
   top: 15.6vmin;
   left: -5.95vmin;
-  border-top-left-radius: 4vmin;
-  border-bottom-right-radius: 5vmin;
-  border-bottom-left-radius: 0;
+  border-radius: 4vmin 0 5vmin 0;
   transform: rotate(20deg);
 
   &::before {
@@ -450,8 +436,7 @@ body {
     background: $portrait-color;
     top: 29vmin;
     left: -3.5vmin;
-    border-top-left-radius: 4vmin;
-    border-top-right-radius: 5vmin;
+    border-radius: 4vmin 5vmin 0 0;
 
     &::before {
       width: 18vmin;
@@ -479,8 +464,7 @@ body {
     background: $portrait-color;
     top: 23.3vmin;
     left: 4.3vmin;
-    border-top-left-radius: 0vmin;
-    border-top-right-radius: 100%;
+    border-radius: 0 100% 0 0;
     transform: rotate(25deg);
 
     &::before {
