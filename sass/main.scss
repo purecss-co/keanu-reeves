@@ -33,10 +33,7 @@ body {
     background: $portrait-color;
     top: 0.5vmin;
     left: -4vmin;
-    border-top-left-radius: 10vmin;
-    border-top-right-radius: 10vmin;
-    border-bottom-right-radius: 17vmin;
-    border-bottom-left-radius: 20.5vmin;
+    border-radius: 10vmin 10vmin 17vmin 20.5vmin;
 
     &::before {
       width: 42vmin;
